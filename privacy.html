@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viona Player - Privacy Policy</title>
+    <meta
+      name="description"
+      content="Official Viona Player privacy policy and contact details."
+    />
+    <style>
+      :root {
+        --bg: #060913;
+        --bg-soft: #0f1424;
+        --card: #141b2e;
+        --card-2: #1a2239;
+        --text: #f2f4ff;
+        --muted: #a9b1cf;
+        --line: #2b3556;
+        --primary: #6f7fff;
+        --accent: #31d0a7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 600px at 20% -10%, #1b2450 0%, transparent 45%),
+          radial-gradient(1000px 700px at 100% 0%, #1f1a42 0%, transparent 40%), var(--bg);
+        color: var(--text);
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      [dir="rtl"] body {
+        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      }
+
+      a {
+        color: #8ea2ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 28px 16px 52px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+      }
+
+      .lang-switch {
+        display: inline-flex;
+        gap: 6px;
+        background: #11182b;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 4px;
+      }
+
+      .lang-btn {
+        border: 1px solid transparent;
+        background: transparent;
+        color: #d7ddf7;
+        border-radius: 999px;
+        font-size: 13px;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+
+      .lang-btn[aria-pressed="true"] {
+        background: #202d54;
+        border-color: #344685;
+        color: #ffffff;
+      }
+
+      .hero {
+        border: 1px solid var(--line);
+        background: linear-gradient(160deg, #10172a 0%, #0c1120 100%);
+        border-radius: 18px;
+        padding: 18px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .logo-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        background: #0b1020;
+        border: 1px solid var(--line);
+        object-fit: cover;
+      }
+
+      .logo-text {
+        width: min(320px, 100%);
+        height: auto;
+        display: block;
+      }
+
+      .fallback-title {
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+
+      .chips {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        font-size: 12px;
+        color: #d6dcff;
+        border: 1px solid var(--line);
+        background: #0f1528;
+        padding: 7px 10px;
+        border-radius: 999px;
+      }
+
+      .grid {
+        margin-top: 14px;
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        background: linear-gradient(180deg, var(--card) 0%, var(--card-2) 100%);
+        border-radius: 16px;
+        padding: 16px;
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      .kv {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 8px;
+        font-size: 14px;
+      }
+
+      [dir="rtl"] .kv {
+        grid-template-columns: 1fr 150px;
+      }
+
+      .kv div:nth-child(odd) {
+        color: var(--muted);
+      }
+
+      .cta {
+        margin-top: 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid #31407b;
+        background: #1a2550;
+        color: #eef1ff;
+        font-weight: 600;
+      }
+
+      .cta-secondary {
+        margin-top: 8px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid #4a5687;
+        background: #121a31;
+        color: #dce3ff;
+        font-weight: 600;
+      }
+
+      .policy {
+        margin-top: 14px;
+      }
+
+      .policy h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .lead {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .section {
+        margin-top: 12px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #101728;
+        padding: 14px;
+      }
+
+      .section h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+      }
+
+      .section p,
+      .section ul {
+        margin: 0;
+        color: #cbd2eb;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      .section ul {
+        padding-left: 18px;
+      }
+
+      [dir="rtl"] .section ul {
+        padding-left: 0;
+        padding-right: 18px;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid #275f51;
+        color: #b9f7e5;
+        background: #102822;
+      }
+
+      .footer {
+        margin-top: 16px;
+        color: #8f98bd;
+        font-size: 12px;
+      }
+
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .kv {
+          grid-template-columns: 1fr;
+          gap: 2px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="topbar">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn" data-lang="en" aria-pressed="true">🇬🇧 EN</button>
+          <button class="lang-btn" data-lang="tr" aria-pressed="false">🇹🇷 TR</button>
+          <button class="lang-btn" data-lang="de" aria-pressed="false">🇩🇪 DE</button>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">🇸🇦 AR</button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <img
+          class="logo-icon"
+          src="./viona_player_icon.png"
+          alt="Viona Player icon"
+          onerror="this.style.display='none';"
+        />
+        <div>
+          <img
+            class="logo-text"
+            src="./viona_player_text_logo.png"
+            alt="Viona Player"
+            onerror="this.style.display='none';document.getElementById('fallback-title').style.display='block';"
+          />
+          <div id="fallback-title" class="fallback-title" style="display: none">Viona Player</div>
+          <div class="chips">
+            <span class="chip" data-i18n="chipPolicy"></span>
+            <span class="chip" data-i18n="chipLegalInApp"></span>
+            <span class="chip" data-i18n="chipUpdated"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2 data-i18n="appInfoTitle"></h2>
+          <div class="kv">
+            <div data-i18n="kApp"></div><div>Viona Player</div>
+            <div data-i18n="kDeveloper"></div><div>Okan Onur Tarlığ</div>
+            <div data-i18n="kPlatform"></div><div>iOS / macOS (Flutter)</div>
+            <div data-i18n="kScope"></div><div data-i18n="scopeValue"></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 data-i18n="contactTitle"></h2>
+          <div class="kv">
+            <div data-i18n="kSupportMail"></div>
+            <div><a href="mailto:viona.player@gmail.com">viona.player@gmail.com</a></div>
+            <div data-i18n="kPrivacyMail"></div>
+            <div>
+              <a href="mailto:viona.player@gmail.com?subject=Viona%20Player%20Privacy">viona.player@gmail.com</a>
+            </div>
+            <div>EULA</div>
+            <div>
+              <a
+                href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="appleEulaLink"
+              ></a>
+            </div>
+          </div>
+          <a
+            class="cta"
+            href="mailto:viona.player@gmail.com?subject=Viona%20Player%20Support"
+            data-i18n="supportCta"
+          ></a>
+          <br />
+          <a
+            class="cta-secondary"
+            href="./support.html"
+            data-i18n="supportFaqCta"
+          ></a>
+        </article>
+      </section>
+
+      <section class="card policy">
+        <h2 data-i18n="policyTitle"></h2>
+        <p class="lead" data-i18n="policyLead"></p>
+
+        <div class="section">
+          <h3 data-i18n="s1t"></h3>
+          <p data-i18n="s1b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s2t"></h3>
+          <p data-i18n="s2b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s3t"></h3>
+          <p data-i18n="s3b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s4t"></h3>
+          <p data-i18n="s4b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s5t"></h3>
+          <p data-i18n="s5b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s6t"></h3>
+          <p data-i18n="s6b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s7t"></h3>
+          <ul>
+            <li data-i18n="s7l1"></li>
+            <li data-i18n="s7l2"></li>
+            <li data-i18n="s7l3"></li>
+            <li data-i18n="s7l4"></li>
+            <li data-i18n="s7l5"></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s8t"></h3>
+          <p data-i18n="s8b"></p>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s9t"></h3>
+          <p data-i18n="s9b"></p>
+          <span class="badge" data-i18n="renewBadge"></span>
+        </div>
+        <div class="section">
+          <h3 data-i18n="s10t"></h3>
+          <p>
+            <span data-i18n="s10b"></span>
+            <a href="mailto:viona.player@gmail.com">viona.player@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
+      <p class="footer" data-i18n="footerNote"></p>
+    </main>
+
+    <script>
+      const i18n = {
+        en: {
+          chipPolicy: "Privacy Policy",
+          chipLegalInApp: "Terms / DMCA / EULA available in-app",
+          chipUpdated: "Last updated: March 11, 2026",
+          appInfoTitle: "App Information",
+          kApp: "Application",
+          kDeveloper: "Developer",
+          kPlatform: "Platform",
+          kScope: "Scope",
+          scopeValue: "Media playback (including local video/audio), playlist management, EPG and metadata integrations",
+          contactTitle: "Contact",
+          kSupportMail: "Support E-mail",
+          kPrivacyMail: "Privacy Questions",
+          appleEulaLink: "Apple Standard EULA",
+          supportCta: "Create Support Request",
+          supportFaqCta: "Support & FAQ",
+          policyTitle: "Privacy Policy",
+          policyLead:
+            "This page explains which data Viona Player processes, where it is stored, which third-party services are contacted, and which controls users have over their data.",
+          s1t: "1. Overview",
+          s1b:
+            "Viona Player processes limited data to play user-provided playlists and local video/audio files, display content details, and personalize parts of the experience. The app does not provide channels, movies, series, or streams on its own.",
+          s2t: "2. Data Stored on Device",
+          s2b:
+            "Profile info, server addresses, username/password, app settings, language selection, player and subtitle preferences, favorites, watch history, watch progress, metadata matches, EPG cache, and selected local media file paths can be stored locally.",
+          s3t: "3. Third-Party Services",
+          s3b:
+            "When you connect a provider, login details are sent to that provider's server. TMDB may be queried for posters, trailers, ratings, and release metadata. EPG updates may use default or custom EPG sources. Local video/audio playback from your device does not upload file content to our servers.",
+          s4t: "4. AI Recommendations",
+          s4b:
+            "If AI recommendations are disabled, no AI requests are sent. If enabled, title lists derived from watch behavior and selected language may be sent to an AI service to generate recommendations.",
+          s5t: "5. Debug Logs",
+          s5b:
+            "Debug log capture is off by default. If enabled, technical logs may be stored locally. Logs are not sent automatically and are only exported when you manually share/send them.",
+          s6t: "6. Ads and Tracking",
+          s6b:
+            "The current version does not use third-party ad SDKs, does not perform cross-app tracking, and does not sell personal data for advertising.",
+          s7t: "7. Your Controls",
+          s7l1: "Enable or disable AI recommendations.",
+          s7l2: "Enable or disable debug log capture.",
+          s7l3: "Clear watch history.",
+          s7l4: "Delete profiles.",
+          s7l5: "Use factory reset to remove local app data.",
+          s8t: "8. Retention and Deletion",
+          s8b:
+            "Most data remains local on your device until you delete it. Profiles, watch history, and app data can be removed with factory reset.",
+          s9t: "9. Purchases and Subscriptions",
+          s9b:
+            "Payments and subscription lifecycle are managed by Apple for premium packages. RevenueCat can be used for purchase verification and entitlement sync. The app does not access or store credit card data. For restorable purchases, use the in-app Restore Purchases action.",
+          renewBadge:
+            "Auto-renew subscriptions renew automatically unless canceled at least 24 hours before the period ends.",
+          s10t: "10. Contact",
+          s10b: "For privacy and data processing questions, contact: ",
+          footerNote:
+            "Note: Terms of Use, DMCA notice, and EULA are also accessible inside the app. You are responsible for having legal rights to the playlists and local media you play."
+        },
+        tr: {
+          chipPolicy: "Gizlilik Politikasi",
+          chipLegalInApp: "Terms / DMCA / EULA uygulama icinde erisilebilir",
+          chipUpdated: "Son guncelleme: 11 Mart 2026",
+          appInfoTitle: "Uygulama Bilgileri",
+          kApp: "Uygulama",
+          kDeveloper: "Uretici",
+          kPlatform: "Platform",
+          kScope: "Kapsam",
+          scopeValue: "Medya oynatma (yerel video/ses dahil), playlist yonetimi, EPG ve metadata entegrasyonlari",
+          contactTitle: "Iletisim",
+          kSupportMail: "Destek E-posta",
+          kPrivacyMail: "Gizlilik Sorulari",
+          appleEulaLink: "Apple Standard EULA",
+          supportCta: "Destek Talebi Olustur",
+          supportFaqCta: "Destek ve SSS",
+          policyTitle: "Gizlilik Politikasi",
+          policyLead:
+            "Bu sayfa, Viona Player uygulamasinin hangi verileri isledigini, verilerin nerede tutuldugunu, hangi ucuncu taraf servislerle ne amacla iletisim kuruldugunu ve kullanicinin veri uzerindeki kontrol haklarini aciklar.",
+          s1t: "1. Genel",
+          s1b:
+            "Viona Player, kullanici tarafindan eklenen oynatma listeleri ve yerel video/ses dosyalarini oynatmak, icerik bilgilerini gostermek ve deneyimi kisilestirmek icin sinirli veri isler. Uygulama kendi basina yayin saglamaz.",
+          s2t: "2. Cihazda Saklanan Veriler",
+          s2b:
+            "Profil bilgileri, sunucu adresleri, kullanici adi/sifre, uygulama ayarlari, dil secimi, oynatici/altyazi tercihleri, favoriler, izleme gecmisi, izleme ilerlemesi, metadata eslesmeleri, EPG onbellegi ve sectiginiz yerel medya dosya yollari yerel saklanabilir.",
+          s3t: "3. Ucuncu Taraf Servisler",
+          s3b:
+            "Saglayiciya baglanirken giris bilgileri ilgili sunucuya iletilir. TMDB, poster/fragman/yas derecesi gibi metadata alanlari icin sorgulanabilir. EPG guncellemeleri varsayilan veya ozel kaynaklarla yapilabilir. Cihazinizdaki yerel video/ses oynatiminda dosya icerigi bizim sunucularimiza yuklenmez.",
+          s4t: "4. AI Onerileri",
+          s4b:
+            "AI onerileri kapaliysa sorgu gonderilmez. Acik oldugunda, izleme davranisindan turetilen baslik listeleri ve secilen dil bilgisi AI servisine iletilebilir.",
+          s5t: "5. Hata / Debug Loglari",
+          s5b:
+            "Debug log varsayilan olarak kapali. Acarsaniz loglar cihazda birikebilir. Loglar otomatik gonderilmez, yalnizca sizin manuel paylasim isleminizle aktarilir.",
+          s6t: "6. Reklam ve Takip",
+          s6b:
+            "Mevcut surumde ucuncu taraf reklam SDK'lari kullanilmaz, uygulamalar arasi takip yapilmaz, veriler reklam amacli satilmaz.",
+          s7t: "7. Kontrolleriniz",
+          s7l1: "AI onerilerini acip kapatabilirsiniz.",
+          s7l2: "Debug log kaydini acip kapatabilirsiniz.",
+          s7l3: "Izleme gecmisini temizleyebilirsiniz.",
+          s7l4: "Profilleri silebilirsiniz.",
+          s7l5: "Fabrika ayarlariyla yerel verileri sifirlayabilirsiniz.",
+          s8t: "8. Veri Saklama ve Silme",
+          s8b:
+            "Verilerin buyuk bolumu siz silene kadar cihazinizda yerel tutulur. Profil, gecmis ve uygulama verileri fabrika ayarlarina don secenegiyle silinebilir.",
+          s9t: "9. Satin Alimlar ve Abonelikler",
+          s9b:
+            "Premium paketlerde odeme ve abonelik yasam dongusu Apple tarafindan yonetilir. RevenueCat, satin alma dogrulama ve entitlement senkronizasyonu icin kullanilabilir. Uygulama kart bilgilerinizi gormez/saklamaz. Restorable satin alimlar icin uygulamadaki Satin Alimlari Geri Yukle secenegi kullanilir.",
+          renewBadge:
+            "Yenilenebilir abonelikler, donem bitiminden en az 24 saat once iptal edilmezse otomatik yenilenir.",
+          s10t: "10. Iletisim",
+          s10b: "Gizlilik ve veri isleme sorulariniz icin: ",
+          footerNote:
+            "Not: Kullanim Kosullari, DMCA bildirimi ve EULA bilgisi uygulama icinde de erisilebilir. Oynattiginiz playlist ve yerel medya dosyalarinin yasal haklari kullanici sorumlulugundadir."
+        },
+        de: {
+          chipPolicy: "Datenschutzrichtlinie",
+          chipLegalInApp: "Terms / DMCA / EULA in der App verfugbar",
+          chipUpdated: "Letzte Aktualisierung: 11. Marz 2026",
+          appInfoTitle: "App-Informationen",
+          kApp: "App",
+          kDeveloper: "Entwickler",
+          kPlatform: "Plattform",
+          kScope: "Umfang",
+          scopeValue: "Medienwiedergabe (inklusive lokaler Video/Audio-Dateien), Playlist-Verwaltung, EPG- und Metadaten-Integrationen",
+          contactTitle: "Kontakt",
+          kSupportMail: "Support E-Mail",
+          kPrivacyMail: "Datenschutzfragen",
+          appleEulaLink: "Apple Standard EULA",
+          supportCta: "Support-Anfrage erstellen",
+          supportFaqCta: "Support & FAQ",
+          policyTitle: "Datenschutzrichtlinie",
+          policyLead:
+            "Diese Seite erklaert, welche Daten Viona Player verarbeitet, wo sie gespeichert werden, welche Drittanbieter-Dienste genutzt werden und welche Kontrollmoeglichkeiten Nutzer haben.",
+          s1t: "1. Allgemeines",
+          s1b:
+            "Viona Player verarbeitet begrenzte Daten, um vom Nutzer hinzugefugte Playlists und lokale Video/Audio-Dateien abzuspielen, Inhaltsdetails anzuzeigen und Teile der Nutzung zu personalisieren. Die App stellt keine Inhalte selbst bereit.",
+          s2t: "2. Lokal gespeicherte Daten",
+          s2b:
+            "Profilinfos, Serveradressen, Benutzername/Passwort, App-Einstellungen, Sprache, Player- und Untertitel-Praeferenzen, Favoriten, Verlauf, Fortschritt, Metadaten-Matches, EPG-Cache und ausgewaehlte lokale Medien-Dateipfade koennen lokal gespeichert werden.",
+          s3t: "3. Dienste von Drittanbietern",
+          s3b:
+            "Beim Verbinden eines Anbieters werden Login-Daten an dessen Server gesendet. TMDB kann fuer Poster, Trailer, Altersfreigaben und weitere Metadaten abgefragt werden. EPG-Updates koennen Standard- oder benutzerdefinierte Quellen nutzen. Bei lokaler Video/Audio-Wiedergabe von Ihrem Geraet wird kein Dateiinhalt an unsere Server hochgeladen.",
+          s4t: "4. KI-Empfehlungen",
+          s4b:
+            "Wenn KI-Empfehlungen deaktiviert sind, werden keine KI-Anfragen gesendet. Falls aktiviert, koennen aus dem Nutzungsverhalten abgeleitete Titellisten und Spracheinstellungen an einen KI-Dienst gesendet werden.",
+          s5t: "5. Debug-Logs",
+          s5b:
+            "Debug-Logs sind standardmaessig deaktiviert. Wenn aktiviert, koennen technische Logs lokal gespeichert werden. Sie werden nicht automatisch gesendet, sondern nur bei manueller Freigabe.",
+          s6t: "6. Werbung und Tracking",
+          s6b:
+            "Die aktuelle Version nutzt keine Drittanbieter-Werbe-SDKs, fuehrt kein Cross-App-Tracking aus und verkauft keine personenbezogenen Daten zu Werbezwecken.",
+          s7t: "7. Ihre Kontrollen",
+          s7l1: "KI-Empfehlungen ein-/ausschalten.",
+          s7l2: "Debug-Logs ein-/ausschalten.",
+          s7l3: "Wiedergabeverlauf loeschen.",
+          s7l4: "Profile loeschen.",
+          s7l5: "Lokale App-Daten per Werkseinstellungen entfernen.",
+          s8t: "8. Aufbewahrung und Loeschung",
+          s8b:
+            "Die meisten Daten bleiben lokal auf dem Geraet, bis Sie sie loeschen. Profile, Verlauf und App-Daten koennen per Werkseinstellungen entfernt werden.",
+          s9t: "9. Kaeufe und Abonnements",
+          s9b:
+            "Zahlung und Abonnement-Lebenszyklus fuer Premium-Pakete werden von Apple verwaltet. RevenueCat kann fuer Kaufvalidierung und Entitlement-Synchronisierung genutzt werden. Die App speichert keine Kreditkartendaten. Fuer wiederherstellbare Kaeufe nutzen Sie die In-App-Funktion Kaeufe wiederherstellen.",
+          renewBadge:
+            "Automatisch verlaengernde Abos verlaengern sich automatisch, wenn sie nicht spaetestens 24 Stunden vor Periodenende gekuendigt werden.",
+          s10t: "10. Kontakt",
+          s10b: "Bei Fragen zu Datenschutz und Datenverarbeitung: ",
+          footerNote:
+            "Hinweis: Nutzungsbedingungen, DMCA-Hinweis und EULA sind auch in der App verfugbar. Fuer die rechtliche Nutzung von Playlists und lokalen Mediendateien sind Nutzer selbst verantwortlich."
+        },
+        ar: {
+          chipPolicy: "سياسة الخصوصية",
+          chipLegalInApp: "الشروط و DMCA و EULA متاحة داخل التطبيق",
+          chipUpdated: "آخر تحديث: 11 مارس 2026",
+          appInfoTitle: "معلومات التطبيق",
+          kApp: "التطبيق",
+          kDeveloper: "المطور",
+          kPlatform: "المنصة",
+          kScope: "النطاق",
+          scopeValue: "تشغيل الوسائط (بما في ذلك الفيديو/الصوت المحلي)، إدارة القوائم، تكاملات EPG والبيانات الوصفية",
+          contactTitle: "التواصل",
+          kSupportMail: "بريد الدعم",
+          kPrivacyMail: "أسئلة الخصوصية",
+          appleEulaLink: "اتفاقية Apple القياسية (EULA)",
+          supportCta: "إنشاء طلب دعم",
+          supportFaqCta: "الدعم والأسئلة الشائعة",
+          policyTitle: "سياسة الخصوصية",
+          policyLead:
+            "توضح هذه الصفحة البيانات التي يعالجها Viona Player، وأماكن التخزين، والخدمات الخارجية المستخدمة، وطرق تحكم المستخدم في بياناته.",
+          s1t: "1. نظرة عامة",
+          s1b:
+            "يعالج Viona Player بيانات محدودة لتشغيل القوائم التي يضيفها المستخدم وملفات الفيديو/الصوت المحلية، وعرض تفاصيل المحتوى، وتخصيص بعض جوانب التجربة. التطبيق لا يوفر المحتوى بنفسه.",
+          s2t: "2. البيانات المخزنة على الجهاز",
+          s2b:
+            "قد تُحفظ محليًا بيانات الملف الشخصي، وعناوين الخوادم، واسم المستخدم/كلمة المرور، والإعدادات، واللغة، وتفضيلات المشغل والترجمة، والمفضلة، وسجل المشاهدة، والتقدم، ومطابقات البيانات الوصفية، وذاكرة EPG المؤقتة، ومسارات ملفات الوسائط المحلية التي تختارها.",
+          s3t: "3. خدمات الطرف الثالث",
+          s3b:
+            "عند الاتصال بمزوّد، تُرسل بيانات الدخول إلى خادمه. قد يتم استعلام TMDB لبيانات مثل الملصقات والعروض والتصنيفات ومعلومات الإصدار. ويمكن أن تستخدم تحديثات EPG مصادر افتراضية أو مخصصة. عند تشغيل فيديو/صوت محلي من جهازك لا يتم رفع محتوى الملف إلى خوادمنا.",
+          s4t: "4. توصيات الذكاء الاصطناعي",
+          s4b:
+            "إذا كانت التوصيات معطلة فلا تُرسل طلبات AI. عند التفعيل، قد تُرسل قوائم عناوين مشتقة من سلوك المشاهدة واللغة المختارة إلى خدمة AI لتوليد التوصيات.",
+          s5t: "5. سجلات التصحيح",
+          s5b:
+            "تسجيل سجلات التصحيح متوقف افتراضيًا. عند تفعيله، قد تُحفظ سجلات تقنية محليًا. لا تُرسل تلقائيًا ولا تُصدر إلا بمبادرة المستخدم.",
+          s6t: "6. الإعلانات والتتبع",
+          s6b:
+            "الإصدار الحالي لا يستخدم SDKs إعلانية خارجية، ولا يجري تتبعًا عبر التطبيقات، ولا يبيع بيانات شخصية لأغراض إعلانية.",
+          s7t: "7. عناصر التحكم",
+          s7l1: "تشغيل/إيقاف توصيات الذكاء الاصطناعي.",
+          s7l2: "تشغيل/إيقاف جمع سجلات التصحيح.",
+          s7l3: "مسح سجل المشاهدة.",
+          s7l4: "حذف الملفات الشخصية.",
+          s7l5: "استخدام إعادة المصنع لمسح البيانات المحلية.",
+          s8t: "8. الاحتفاظ والحذف",
+          s8b:
+            "تبقى أغلب البيانات محليًا على جهازك حتى تحذفها. يمكن إزالة الملفات الشخصية وسجل المشاهدة وبيانات التطبيق عبر إعادة المصنع.",
+          s9t: "9. المشتريات والاشتراكات",
+          s9b:
+            "تدير Apple عمليات الدفع ودورة الاشتراك للباقات المميزة. يمكن استخدام RevenueCat للتحقق من الشراء ومزامنة الاستحقاق. التطبيق لا يصل إلى بيانات البطاقة البنكية ولا يخزنها. للمشتريات القابلة للاستعادة استخدم خيار استعادة المشتريات داخل التطبيق.",
+          renewBadge:
+            "الاشتراكات المتجددة تلقائيًا تتجدد تلقائيًا ما لم يتم الإلغاء قبل 24 ساعة على الأقل من نهاية الفترة.",
+          s10t: "10. التواصل",
+          s10b: "لأسئلة الخصوصية ومعالجة البيانات تواصل عبر: ",
+          footerNote:
+            "ملاحظة: الشروط وإشعار DMCA وEULA متاحة أيضًا داخل التطبيق. يتحمل المستخدم مسؤولية امتلاك الحقوق القانونية لقوائم التشغيل وملفات الوسائط المحلية التي يشغّلها."
+        }
+      };
+
+      function applyLanguage(lang) {
+        const dict = i18n[lang] || i18n.en;
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+        document.querySelectorAll("[data-i18n]").forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key]) el.textContent = dict[key];
+        });
+
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+          btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
+        });
+
+        const pageTitles = {
+          en: "Viona Player - Privacy Policy",
+          tr: "Viona Player - Gizlilik Politikasi",
+          de: "Viona Player - Datenschutzrichtlinie",
+          ar: "Viona Player - سياسة الخصوصية"
+        };
+        document.title = pageTitles[lang] || pageTitles.en;
+      }
+
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+      });
+
+      // Default language at first open: English
+      applyLanguage("en");
+    </script>
+  </body>
+</html>

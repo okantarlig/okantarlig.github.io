@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viona Player - Support</title>
+  <meta name="description" content="Official support page for Viona Player." />
+  <style>
+    :root {
+      --bg: #060913;
+      --card: #131a2d;
+      --card-2: #1a2239;
+      --text: #f2f4ff;
+      --muted: #a9b1cf;
+      --line: #2b3556;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      background: radial-gradient(1100px 600px at 10% -10%, #1b2450 0%, transparent 40%),
+        radial-gradient(900px 600px at 100% 0%, #1f1a42 0%, transparent 35%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    [dir="rtl"] body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+
+    a {
+      color: #90a4ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 52px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 6px;
+      background: #11182b;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px;
+    }
+
+    .lang-btn {
+      border: 1px solid transparent;
+      background: transparent;
+      color: #d7ddf7;
+      border-radius: 999px;
+      font-size: 13px;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      background: #202d54;
+      border-color: #344685;
+      color: #fff;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(160deg, #10172a 0%, #0c1120 100%);
+      border-radius: 18px;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+    }
+
+    .logo-text {
+      width: min(320px, 100%);
+      height: auto;
+      display: block;
+    }
+
+    .fallback-title {
+      font-size: 30px;
+      font-weight: 800;
+    }
+
+    .chips {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 12px;
+      color: #d6dcff;
+      border: 1px solid var(--line);
+      background: #0f1528;
+      padding: 7px 10px;
+      border-radius: 999px;
+    }
+
+    .grid {
+      margin-top: 14px;
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, var(--card) 0%, var(--card-2) 100%);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .cta {
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #31407b;
+      background: #1a2550;
+      color: #eef1ff;
+      font-weight: 600;
+    }
+
+    .faq {
+      margin-top: 14px;
+    }
+
+    .faq-item {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #101728;
+      padding: 14px;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #cbd2eb;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    [dir="rtl"] .list {
+      padding-left: 0;
+      padding-right: 18px;
+    }
+
+    .footer {
+      margin-top: 16px;
+      color: #8f98bd;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <div class="lang-switch" aria-label="Language switcher">
+        <button class="lang-btn" data-lang="en" aria-pressed="true">🇬🇧 EN</button>
+        <button class="lang-btn" data-lang="tr" aria-pressed="false">🇹🇷 TR</button>
+        <button class="lang-btn" data-lang="de" aria-pressed="false">🇩🇪 DE</button>
+        <button class="lang-btn" data-lang="ar" aria-pressed="false">🇸🇦 AR</button>
+      </div>
+    </div>
+
+    <section class="hero">
+      <img class="logo-icon" src="./viona_player_icon.png" alt="Viona Player icon"
+        onerror="this.style.display='none';" />
+      <div>
+        <img class="logo-text" src="./viona_player_text_logo.png" alt="Viona Player"
+          onerror="this.style.display='none';document.getElementById('fallback-title').style.display='block';" />
+        <div id="fallback-title" class="fallback-title" style="display: none">Viona Player</div>
+        <div class="chips">
+          <span class="chip" data-i18n="chipSupport"></span>
+          <span class="chip" data-i18n="chipOwner"></span>
+          <span class="chip" data-i18n="chipUpdated"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2 data-i18n="contactTitle"></h2>
+        <p class="muted" data-i18n="contactBody"></p>
+        <a class="cta" href="mailto:viona.player@gmail.com?subject=Viona%20Player%20Support" data-i18n="mailCta"></a>
+      </article>
+
+      <article class="card">
+        <h2 data-i18n="linksTitle"></h2>
+        <p class="muted">
+          <a href="./privacy.html" data-i18n="privacyLink"></a><br />
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank"
+            rel="noopener noreferrer" data-i18n="eulaLink"></a>
+        </p>
+      </article>
+    </section>
+
+    <section class="card faq">
+      <h2 data-i18n="faqTitle"></h2>
+
+      <article class="faq-item">
+        <h3 data-i18n="q1t"></h3>
+        <p data-i18n="q1b"></p>
+      </article>
+
+      <article class="faq-item">
+        <h3 data-i18n="q2t"></h3>
+        <p data-i18n="q2b"></p>
+      </article>
+
+      <article class="faq-item">
+        <h3 data-i18n="q3t"></h3>
+        <p data-i18n="q3b"></p>
+      </article>
+
+      <article class="faq-item">
+        <h3 data-i18n="q4t"></h3>
+        <p data-i18n="q4b"></p>
+      </article>
+
+      <article class="faq-item">
+        <h3 data-i18n="q5t"></h3>
+        <ul class="list">
+          <li data-i18n="q5l1"></li>
+          <li data-i18n="q5l2"></li>
+          <li data-i18n="q5l3"></li>
+          <li data-i18n="q5l4"></li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="footer" data-i18n="footerNote"></p>
+  </main>
+
+  <script>
+    const i18n = {
+      en: {
+        chipSupport: "Support Center",
+        chipOwner: "Owner: Okan Onur Tarlığ",
+        chipUpdated: "Last updated: March 11, 2026",
+        contactTitle: "Contact",
+        contactBody: "For support, billing, and technical questions, contact us via e-mail. We usually respond within 1-3 business days.",
+        mailCta: "Send Support E-mail",
+        linksTitle: "Important Links",
+        privacyLink: "Privacy Policy",
+        eulaLink: "Apple Standard EULA",
+        faqTitle: "Frequently Asked Questions",
+        q1t: "How do I add a playlist?",
+        q1b: "Open the Playlists screen and create a profile. You can add an Xtream or M3U source using your provider details, or use the Local Video / Audio option to play files directly from your device.",
+        q2t: "The stream does not play. What should I do?",
+        q2b: "Check your internet connection, verify provider URL/credentials, and try opening the stream again. If the issue continues, send us logs from Settings > Debug.",
+        q3t: "How do I manage premium subscription?",
+        q3b: "Use Settings > Premium AI. You can open the paywall, open Customer Center, and manage your subscription under your Apple account.",
+        q4t: "How do I restore purchases?",
+        q4b: "In production builds, use Settings > Premium AI > Restore Purchases.",
+        q5t: "What should I include in a support e-mail?",
+        q5l1: "Device model and OS version",
+        q5l2: "App version",
+        q5l3: "A short description of the issue",
+        q5l4: "Debug logs or screenshot if possible",
+        footerNote: "Viona Player is a media player app and does not provide or host channels, movies, series, or streams. Users are responsible for legal rights to playlists and local media files they play."
+      },
+      tr: {
+        chipSupport: "Destek Merkezi",
+        chipOwner: "Sahip: Okan Onur Tarlığ",
+        chipUpdated: "Son guncelleme: 11 Mart 2026",
+        contactTitle: "Iletisim",
+        contactBody: "Destek, faturalama ve teknik sorulariniz icin e-posta ile ulasabilirsiniz. Genellikle 1-3 is gunu icinde donus yapariz.",
+        mailCta: "Destek E-postasi Gonder",
+        linksTitle: "Onemli Baglantilar",
+        privacyLink: "Gizlilik Politikasi",
+        eulaLink: "Apple Standard EULA",
+        faqTitle: "Sik Sorulan Sorular",
+        q1t: "Playlist nasil eklerim?",
+        q1b: "Playlists ekranina girip profil olusturun. Saglayici bilgilerinizle Xtream veya M3U kaynagi ekleyebilir ya da Yerel Video / Ses secenegiyle cihazinizdaki dosyalari dogrudan oynatabilirsiniz.",
+        q2t: "Yayin acilmiyor, ne yapmaliyim?",
+        q2b: "Internet baglantinizi ve saglayici URL/kullanici bilgilerini kontrol edin. Sorun devam ederse Settings > Debug ekranindan log gonderin.",
+        q3t: "Premium aboneligi nasil yonetirim?",
+        q3b: "Settings > Premium AI bolumunden paywall ve Customer Center'a ulasabilir, aboneliginizi Apple hesabi uzerinden yonetebilirsiniz.",
+        q4t: "Satin alimlari nasil geri yuklerim?",
+        q4b: "Production surumde Settings > Premium AI > Satin Alimlari Geri Yukle yolunu kullanin.",
+        q5t: "Destek e-postasina neleri eklemeliyim?",
+        q5l1: "Cihaz modeli ve OS surumu",
+        q5l2: "Uygulama surumu",
+        q5l3: "Sorunun kisa aciklamasi",
+        q5l4: "Mumkunse debug log veya ekran goruntusu",
+        footerNote: "Viona Player bir medya oynatici uygulamasidir; kanal, film, dizi veya yayin saglamaz/barindirmaz. Oynattiginiz playlist ve yerel medya dosyalarinin yasal haklari kullanici sorumlulugundadir."
+      },
+      de: {
+        chipSupport: "Support Center",
+        chipOwner: "Inhaber: Okan Onur Tarlığ",
+        chipUpdated: "Letzte Aktualisierung: 11. Marz 2026",
+        contactTitle: "Kontakt",
+        contactBody: "Fur Support-, Abrechnungs- und Technikfragen erreichen Sie uns per E-Mail. Antwortzeit meist 1-3 Werktage.",
+        mailCta: "Support-E-Mail senden",
+        linksTitle: "Wichtige Links",
+        privacyLink: "Datenschutzrichtlinie",
+        eulaLink: "Apple Standard EULA",
+        faqTitle: "Haufige Fragen",
+        q1t: "Wie fuege ich eine Playlist hinzu?",
+        q1b: "Oeffnen Sie den Playlist-Bereich und erstellen Sie ein Profil. Danach koennen Sie Xtream- oder M3U-Quellen eintragen oder ueber die Option Lokales Video / Audio Dateien direkt vom Geraet abspielen.",
+        q2t: "Ein Stream startet nicht. Was tun?",
+        q2b: "Prufen Sie Internet, Provider-URL und Zugangsdaten. Wenn das Problem bleibt, senden Sie Logs aus Einstellungen > Debug.",
+        q3t: "Wie verwalte ich Premium?",
+        q3b: "Unter Einstellungen > Premium AI koennen Sie Paywall und Customer Center oeffnen und das Abo im Apple-Konto verwalten.",
+        q4t: "Wie stelle ich Kaeufe wieder her?",
+        q4b: "In Production-Builds: Einstellungen > Premium AI > Kaeufe wiederherstellen.",
+        q5t: "Was sollte in einer Support-Mail enthalten sein?",
+        q5l1: "Geraetemodell und OS-Version",
+        q5l2: "App-Version",
+        q5l3: "Kurze Problembeschreibung",
+        q5l4: "Wenn moeglich Debug-Logs oder Screenshot",
+        footerNote: "Viona Player ist eine Media-Player-App und stellt keine Kanaele, Filme, Serien oder Streams bereit. Nutzer sind fuer die rechtliche Nutzung von Playlists und lokalen Mediendateien selbst verantwortlich."
+      },
+      ar: {
+        chipSupport: "مركز الدعم",
+        chipOwner: "المالك: Okan Onur Tarlığ",
+        chipUpdated: "آخر تحديث: 11 مارس 2026",
+        contactTitle: "التواصل",
+        contactBody: "للدعم والفوترة والمشاكل التقنية، تواصل معنا عبر البريد الإلكتروني. عادةً نرد خلال 1-3 أيام عمل.",
+        mailCta: "إرسال بريد دعم",
+        linksTitle: "روابط مهمة",
+        privacyLink: "سياسة الخصوصية",
+        eulaLink: "اتفاقية Apple القياسية (EULA)",
+        faqTitle: "الأسئلة الشائعة",
+        q1t: "كيف أضيف قائمة تشغيل؟",
+        q1b: "افتح شاشة القوائم وأنشئ ملفًا شخصيًا، ثم أضف مصدر Xtream أو M3U باستخدام بيانات المزود، أو استخدم خيار فيديو / صوت محلي لتشغيل ملفات جهازك مباشرة.",
+        q2t: "البث لا يعمل، ماذا أفعل؟",
+        q2b: "تحقق من الإنترنت وبيانات المزود. إذا استمرت المشكلة أرسل السجلات من الإعدادات > Debug.",
+        q3t: "كيف أدير اشتراك Premium؟",
+        q3b: "من الإعدادات > Premium AI يمكنك فتح paywall وCustomer Center وإدارة الاشتراك عبر حساب Apple.",
+        q4t: "كيف أستعيد المشتريات؟",
+        q4b: "في نسخة الإنتاج استخدم: الإعدادات > Premium AI > استعادة المشتريات.",
+        q5t: "ماذا أرسل في رسالة الدعم؟",
+        q5l1: "موديل الجهاز وإصدار النظام",
+        q5l2: "إصدار التطبيق",
+        q5l3: "وصف مختصر للمشكلة",
+        q5l4: "إن أمكن سجلات Debug أو لقطة شاشة",
+        footerNote: "Viona Player هو تطبيق مشغل وسائط ولا يوفر أو يستضيف قنوات أو أفلامًا أو مسلسلات أو بثًا. يتحمل المستخدم مسؤولية امتلاك الحقوق القانونية لقوائم التشغيل وملفات الوسائط المحلية التي يشغّلها."
+      }
+    };
+
+    function applyLanguage(lang) {
+      const dict = i18n[lang] || i18n.en;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) el.textContent = dict[key];
+      });
+
+      document.querySelectorAll(".lang-btn").forEach((btn) => {
+        btn.setAttribute("aria-pressed", btn.dataset.lang === lang ? "true" : "false");
+      });
+
+      const titles = {
+        en: "Viona Player - Support",
+        tr: "Viona Player - Destek",
+        de: "Viona Player - Support",
+        ar: "Viona Player - الدعم"
+      };
+      document.title = titles[lang] || titles.en;
+    }
+
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+    });
+
+    // Default language at first open: English
+    applyLanguage("en");
+  </script>
+</body>
+
+</html>
